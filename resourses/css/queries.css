@@ -243,11 +243,15 @@
     }
 
     .logo {
-        height: 100px;
+        height: 90px;
     }
 
     header .btn {
         margin-top: 5px;
+    }
+
+    .hero-text-box {
+        top: 60%;
     }
 
     .hero-text-box .btn {
@@ -327,5 +331,9 @@
 @media only screen and (orientation: landscape) {
     .hero-text-box {
         top: 70%;
+    }
+    
+    .logo {
+        height: 90px;
     }
 }
