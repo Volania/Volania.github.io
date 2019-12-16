@@ -328,11 +328,11 @@
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 767px) and (orientation: landscape) {
     .hero-text-box {
         top: 70%;
     }
-    
+
     .logo {
         height: 90px;
     }
