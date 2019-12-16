@@ -13,6 +13,7 @@
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+    html,
     body { 
         font-size: 18px; 
     }
@@ -80,17 +81,17 @@
     .footer-nav li {
         margin-right: 12px;
     }
+
+    footer {
+        font-size: 90%;
+    }
 }
 
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    body {
-        font-size: 16px;
-    }
-
     section {
-        padding: 35px 0;
+        padding: 55px 0;
     }
 
     .icon-big {
@@ -140,6 +141,10 @@
         height: 1px;
     }
 
+    .box p {
+        font-size: 100%;
+    }
+
     .meals-showcase li {
         width: 50%;
     }
@@ -162,10 +167,11 @@
     }
 
     .works-step div {
-        height: 30px;
-        width: 30px;
-        padding: 4px;
+        height: 40px;
+        width: 40px;
+        padding: 8px 5px 5px 5px;
         margin-right: 15px;
+        margin-bottom: 15px;
         font-size: 120%;
         border: 1px solid #e67e22;
     }
@@ -175,13 +181,65 @@
         width: auto;
         margin-top: 5px;
     }
+
+    blockquote {
+        margin-top: 15px;
+    }
+
+    blockquote:before {
+        font-size: 400%;
+        top: 0;
+        left: -5px;
+    }
+
+    cite {
+        font-size: 90%;
+        margin-top: 10px;
+        float: right;
+    }
+
+    .plan-box {
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .dummy {
+        font-size: 0%;
+    }
+
+    input[type=submit] {
+        margin-right: 0;
+        float: right;
+    }
+
+    footer .col {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-nav {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .social-links {
+        float: none;
+    }
 }
 
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    /*html, body {
+        font-weight: 400;
+    }*/
+    
     section {
-        padding: 25px 0;
+        padding: 40px 0;
     }
 
     .logo {
@@ -192,13 +250,82 @@
         margin-top: 5px;
     }
 
-    .hero-text-box {
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .hero-text-box .btn {
+        margin-top: 10px;
+    }
+
+    .span-1-of-2,
+    .span-1-of-4 {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    .icon-big {
+        font-size: 240%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .section-features h3 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .app-screen { 
+        width: 40%; 
+    }
+
+    .steps-box:first-child {
+        margin-top: 5px;
+        padding-right: 0;
+    }
+
+    .steps-box:last-child {
+        margin-top: 20px;
+    }
+
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        padding: 8px 5px 5px 5px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        font-size: 120%;
+        border: 1px solid #e67e22;
+    }
+
+    .center-buttons {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .section-cities {
+        text-align: center;
+    }
+
+    .city-feature {
+        width: 175px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .box img {
+        width: 90%;
+    }
+
+    .plan-box {
+        width: 95%;
+        margin: 0 auto;
     }
 
     .contact-form {
         width: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .hero-text-box {
+        top: 70%;
     }
 }
