@@ -103,6 +103,16 @@ $(document).ready(function() {
         }
     });
 
+    $('.js--mobile-nav-hide').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        if (icon.hasClass('ion-close-round')) {
+            nav.slideToggle(200);
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+    });
 });
 
 

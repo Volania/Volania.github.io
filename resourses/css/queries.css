@@ -117,27 +117,25 @@
 
     .main-nav {
         display: none;
+        float: left;
+        margin-top: 30px;
+        margin-left: 15px;
     }
 
     .mobile-nav-icon {
         display: inline-block;
     }
 
-    .main-nav {
-        float: left;
-        margin-top: 35px;
-        margin-left: 25px;
-    }
-
     .main-nav li {
         display: block;
+        margin-left: 20px;
     }
 
     .main-nav li a:link, 
     .main-nav li a:visited {
         display: block;
         border: 0;
-        padding: 10px 0;
+        padding: 7px 0;
         font-size: 100%;
     }
 
@@ -147,7 +145,7 @@
     
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited {
-        padding: 10px 0;
+        padding: 7px 0;
     }
 
     .sticky .mobile-nav-icon {
@@ -268,6 +266,23 @@
     .social-links {
         float: none;
     }
+
+    .js--wp-1,
+    .js--wp-3 {
+        opacity: 1;
+        -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    }
+
+    .js--wp-2 {
+        -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    }
+
+    .js--wp-4 {
+        -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    }
 }
 
 
@@ -357,12 +372,52 @@
     }
 }
 
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 813px) and (orientation: landscape) {
     .hero-text-box {
         top: 70%;
     }
 
     .logo {
-        height: 90px;
+        height: 70px;
+    }
+
+    .mobile-nav-icon {
+        display: none;
+    }
+
+    .main-nav {
+        float: right;
+        display: block;
+        margin-top: 35px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 90%;
+    } 
+}
+
+@media only screen and (max-width: 670px) and (orientation: landscape) {
+    .main-nav li {
+        margin-left: 15px;
+        font-size: 80%;
+    } 
+}
+
+@media only screen and (max-width: 567px) and (orientation: landscape) {
+    .main-nav li {
+        margin-left: 7px;
+        font-size: 70%;
+    } 
+}
+
+@media only screen and (max-width: 482px) and (orientation: landscape) {
+    .main-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 130%;
     }
 }
