@@ -19,7 +19,20 @@
     }
 
     section { 
-        padding: 60px 0; 
+        padding: 70px 0 60px 0; 
+    }
+
+    .logo-black {
+        height: 45px;
+    }
+
+    .sticky .main-nav {
+        margin-top: 17px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 17px 0;
     }
 
     .long-copy {
@@ -91,7 +104,11 @@
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
     section {
-        padding: 55px 0;
+        padding: 65px 0 55px 0; 
+    }
+
+    .logo-black {
+        height: 40px;
     }
 
     .icon-big {
@@ -140,7 +157,7 @@
     }
 
     .sticky .main-nav {
-        margin-top: 10px;
+        margin-top: 7px;
     }
     
     .sticky .main-nav li a:link,
@@ -149,7 +166,7 @@
     }
 
     .sticky .mobile-nav-icon {
-        margin-top: 10px;
+        margin-top: 7px;
     }
 
     .sticky .mobile-nav-icon i {
@@ -201,16 +218,6 @@
 
     .app-screen { 
         width: 80%; 
-    }
-
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        padding: 5px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        font-size: 120%;
-        border: 1px solid #e67e22;
     }
 
     .btn-app img {
@@ -293,7 +300,7 @@
     }*/
     
     section {
-        padding: 40px 0;
+        padding: 60px 0 40px 0; 
     }
 
     .logo {
@@ -372,7 +379,7 @@
     }
 }
 
-@media only screen and (max-width: 813px) and (orientation: landscape) {
+@media only screen and (max-width: 812px) and (orientation: landscape) {
     .hero-text-box {
         top: 70%;
     }
@@ -395,7 +402,30 @@
         display: inline-block;
         margin-left: 15px;
         font-size: 90%;
+        border: 0;
     } 
+
+    .sticky .main-nav {
+        margin-top: 17px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding-bottom: 10px;
+        border: 0;
+    }
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding-bottom: 10px;
+        border: 0;
+    }
 }
 
 @media only screen and (max-width: 670px) and (orientation: landscape) {
@@ -403,7 +433,18 @@
         margin-left: 15px;
         font-size: 80%;
     } 
+
+    .sticky .main-nav {
+        margin-top: 7px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 12px 0;
+    }
 }
+
+
 
 @media only screen and (max-width: 567px) and (orientation: landscape) {
     .main-nav li {
